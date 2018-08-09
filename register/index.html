@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register - Footykeeper</title>
+  <link rel="stylesheet" href="https://smith2021.github.io/hermes/w3.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Material+Icons">
+  <style type="text/css">
+    .roboto{font-family:Roboto,Helvetica Neue,Helvetica,arial,sans-serif;}
+  </style>
+</head>
+<body>
+  <div class="w3-padding-large roboto w3-large w3-green" id="successDisplay" hidden>
+    <h2>Footykeeper</h2>
+    <p>Account created successfully! Redirecting you to the home page now...</p>
+    <p>If you are not redirected within three seconds, click <a id="redirectLink">here</a>.</p>
+  </div>
+  <div class="w3-padding-large roboto" id="_main">
+    <h2>Footykeeper</h2>
+    <p class="w3-large">To begin, let's make an account for you.</p>
+    <div class="w3-padding w3-blue w3-large" id="getMethod">
+      <h4>Registration Options:</h4>
+      <div class="w3-button w3-white registration-method" id="chooseEmail">Sign up with Email</div>&nbsp;&nbsp;<img src="https://joshuasmith2021.github.io/footy/google-branding/light.png" alt="Sign in with Google" class="registration-method" id="chooseGoogle">
+    </div>
+    <div class="w3-padding w3-blue w3-large" id="getEmailInfo" hidden>
+      <h4>Email</h4>
+      <input type="text" class="w3-input" id="userEmail" placeholder="jon.doe@example.com">
+      <h4>Password</h4>
+      <input type="password" class="w3-input passwords" id="userPassword">
+      <h4>Confirm Password</h4>
+      <input type="password" class="w3-input passwords" id="confirmPassword">
+      <p class="w3-white w3-text-red w3-padding" id="signupErrorField" hidden><i class="material-icons">error</i>&nbsp;&nbsp;<span id="errorText"></span></p>
+      <hr>
+      <div class="w3-button w3-white" id="submitEmailInfo">
+        Submit
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase-auth.js"></script>
+  <script src="../firebase-init.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
