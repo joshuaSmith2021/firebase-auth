@@ -18,4 +18,6 @@ firebase.initializeApp(config);
 ```
   - Replace the values inside <these things> with the actual API keys, links, etc.
 2. Add login and registration handling to `login.js` and `register.js`. They have a `loginSuccess()` function and a `regSuccess()` function, respectively. These functions are fired on successful logins, so they can redirect to the home page, launch a cloud function, etc.
-3. (optional) Compress `login.js` and `register.js` and update the login and registration pages to point to the compressed files. I would recommend [jscompress](https://jscompress.com), a free, open source JavaScript compressor that works online with no downloads. 
+3. (optional) Compress `login.js` and `register.js` and update the login and registration pages to point to the compressed files. I would recommend [jscompress](https://jscompress.com), a free, open source JavaScript compressor that works online with no downloads.
+
+Also be sure to properly use the Google sign in buttons.
